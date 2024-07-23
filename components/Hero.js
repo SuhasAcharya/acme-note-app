@@ -22,10 +22,17 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Welcome to Acme Note
+            Welcome to{" "}
+            <span className="text-green-800 text-6xl character-shadow">
+              Acme
+            </span>{" "}
+            <span className="text-6xl text-green-700 character-shadow">
+              Note
+            </span>
           </motion.h1>
+
           <motion.span
-           className="w-8 h-8 text-[50px] relative bottom-4 left-4 hidden sm:block"
+            className="w-8 h-8 text-[50px] relative bottom--10 right-10 sm:relative sm:left-4 sm:bottom-4"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{

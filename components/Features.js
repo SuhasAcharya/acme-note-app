@@ -57,9 +57,9 @@ const Features = () => {
   const { ref } = useSectionInView("Features");
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "0.7 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
@@ -75,11 +75,16 @@ const Features = () => {
       {featureData.map((feature, index) => (
         <motion.section
           key={index}
-          className="cursor-pointer group mb-8 bg-green-500 max-w-[42rem] rounded-lg overflow-hidden sm:pr-0 relative transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 h-[18rem]"
+          className="cursor-pointer group mb-8 bg-green-500 max-w-[42rem] rounded-lg overflow-hidden relative transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 h-auto sm:flex sm:flex-row flex-col"
         >
           <motion.div
-            className="absolute top-4 left-[-6rem] rounded-t-lg shadow-2xl"
-            whileHover={{ scale: 1, translateX: -3, translateY: -3, rotate: 3 }}
+            className="w-full sm:w-1/2 flex justify-center items-center p-4 sm:pr-0"
+            whileHover={{
+              scale: 1.05,
+              translateX: 0,
+              translateY: 0,
+              rotate: 5,
+            }}
             whileTap={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -89,10 +94,10 @@ const Features = () => {
               width={feature.imageWidth}
               height={feature.imageHeight}
               quality={95}
-              className="hidden sm:block"
+              className="w-full h-auto"
             />
           </motion.div>
-          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full w-full sm:group-even:ml-[21rem] bg-green-400">
+          <div className="w-full sm:w-1/2 p-4 flex flex-col justify-center bg-green-400">
             <h3 className="text-2xl font-semibold">{feature.title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 font-semibold">
               {feature.description}
