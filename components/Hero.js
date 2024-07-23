@@ -17,16 +17,16 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col items-center py-16 px-6">
         <div className="flex w-full h-full justify-center">
           <motion.h1
-            className="text-5xl font-bold text-center mb-4 text-gray-800"
+            className="text-5xl font-bold text-center mb-4 text-gray-800 dark:text-gray-900"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             Welcome to{" "}
-            <span className="text-green-800 text-6xl character-shadow">
+            <span className="text-green-800 text-6xl character-shadow dark:text-green-300">
               Acme
             </span>{" "}
-            <span className="text-6xl text-green-700 character-shadow">
+            <span className="text-6xl text-green-700 character-shadow dark:text-green-400">
               Note
             </span>
           </motion.h1>
@@ -46,7 +46,7 @@ const Hero = () => {
           </motion.span>
         </div>
         <motion.p
-          className="text-lg text-center mb-8 text-gray-600"
+          className="text-lg text-center mb-8 text-gray-600 dark:text-gray-200"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}

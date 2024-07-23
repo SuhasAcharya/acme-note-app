@@ -75,7 +75,7 @@ const Features = () => {
       {featureData.map((feature, index) => (
         <motion.section
           key={index}
-          className="cursor-pointer group mb-8 bg-green-500 max-w-[42rem] rounded-lg overflow-hidden relative transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 h-auto sm:flex sm:flex-row flex-col"
+          className="dark:bg-green-400 cursor-pointer group mb-8 bg-green-500 max-w-[42rem] rounded-lg overflow-hidden relative transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 h-auto sm:flex sm:flex-row flex-col"
         >
           <motion.div
             className="w-full sm:w-1/2 flex justify-center items-center p-4 sm:pr-0"
@@ -97,7 +97,7 @@ const Features = () => {
               className="w-full h-auto"
             />
           </motion.div>
-          <div className="w-full sm:w-1/2 p-4 flex flex-col justify-center bg-green-400">
+          <div className="w-full sm:w-1/2 p-4 flex flex-col justify-center bg-green-400 dark:bg-green-600" >
             <h3 className="text-2xl font-semibold">{feature.title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 font-semibold">
               {feature.description}

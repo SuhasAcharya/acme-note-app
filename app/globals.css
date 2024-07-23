@@ -2,13 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --line-color: #e5e7eb;
-}
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
-}
 
 .borderBlack {
   @apply border border-black/10;
@@ -34,6 +28,16 @@ html.dark {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark body {
+  background-color: #333;
+  color: #f0f0f0;
+}
 
 
 
