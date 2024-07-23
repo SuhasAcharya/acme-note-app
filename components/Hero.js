@@ -25,7 +25,7 @@ const Hero = () => {
             Welcome to Acme Note
           </motion.h1>
           <motion.span
-            className="w-8 h-8 text-[50px] relative bottom-4 left-4"
+           className="w-8 h-8 text-[50px] relative bottom-4 left-4 hidden sm:block"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{

@@ -31,11 +31,11 @@ const Testimonials = () => {
             {testimonialsData.map((testimonial, index) => (
               <div
                 key={index}
-                className="px-6 mb-8 flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+                className="px-4 sm:px-6 mb-8 flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer w-[20rem] sm:w-[30rem]  "
               >
-                <div className="w-[30rem] p-6 bg-white shadow-md rounded transition-transform duration-300 ease-in-out hover:scale-105">
-                  <p className="text-gray-600 mb-4">{testimonial.text}</p>
-                  <p className="font-semibold">- {testimonial.author}</p>
+                <div className="p-4 sm:p-6 bg-white shadow-md rounded transition-transform duration-300 ease-in-out hover:scale-105 h-[10rem] sm:h-[10rem]">
+                  <p className="text-gray-600 mb-4 text-sm sm:text-base">{testimonial.text}</p>
+                  <p className="font-semibold text-sm sm:text-base">- {testimonial.author}</p>
                 </div>
               </div>
             ))}

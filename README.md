@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Acme Note Landing is a modern, responsive landing page for the Acme Note app. This project showcases the key features of the Acme Note app and encourages users to sign up for more information.
 
-## Getting Started
+Development Overview
 
-First, run the development server:
+Technology Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js: A React framework for building server-side rendered and statically generated web applications.
+React: A JavaScript library for building user interfaces.
+Tailwind CSS: A utility-first CSS framework for creating custom designs.
+Framer Motion: A library for creating animations and transitions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Packages Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+clsx: A utility for constructing className strings conditionally.
+react-icons: A library for adding icons to the UI.
+react-intersection-observer: To handle element visibility changes.
+@babel/preset-react: A Babel preset for transforming React code.
+@locator/babel-jsx: Babel plugin for handling JSX transformations.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Development Workflow
+Setup and Installation:
 
-## Learn More
+Clone the repository.
+Run npm install to install all dependencies.
+Development:
 
-To learn more about Next.js, take a look at the following resources:
+Start the development server with npm run dev.
+Open your browser and navigate to http://localhost:3000.
+Building:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build the project for production with npm run build.
+Starting:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Start the production server with npm run start.
+Linting:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Run npm run lint to check for any linting issues.
+Project Structure
+/pages: Contains the main pages of the application.
+/components: Reusable UI components.
+/public: Static files like images and fonts.
+Key Features
+Responsive Design: The landing page adapts to different screen sizes.
+Smooth Animations: Utilizes Framer Motion for smooth and interactive animations.
+Accessibility: Implemented accessibility features for a better user experience.
