@@ -7,7 +7,8 @@ import { links } from "@/lib/data";
 import { useActiveSectionContext } from "../context/active-section-context";
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   const handleScroll = (e, hash) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ export default function Header() {
         block: "start",
       });
     }
-    setActiveSection(hash.substring(1)); 
+    setActiveSection(hash.substring(1));
     setTimeOfLastClick(Date.now());
   };
 
@@ -44,7 +45,8 @@ export default function Header() {
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950 dark:text-gray-200": activeSection === link.name,
+                    "text-gray-950 dark:text-gray-200":
+                      activeSection === link.name,
                   }
                 )}
                 onClick={() => {

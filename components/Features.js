@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from 'next/image'; 
+import Image from "next/image";
 import { useSectionInView } from "@/lib/hooks";
 
 const featureData = [
@@ -10,40 +10,46 @@ const featureData = [
     title: "Organizational Tools",
     description: (
       <>
-        Organize notes into folders or tag them for easier search and categorization.<br />
-        Pin important notes for quick access.<br />
-        Search across notes, tags, and folders with filters for dates, tags, etc.
+        Organize notes into folders or tag them for easier search and
+        categorization.
+        <br />
+        Pin important notes for quick access.
+        <br />
+        Search across notes, tags, and folders with filters for dates, tags,
+        etc.
       </>
     ),
     imageUrl: "/feature1.jpeg",
-    imageWidth: 450, 
-    imageHeight: 300, 
+    imageWidth: 450,
+    imageHeight: 300,
   },
   {
     title: "Multimedia Support",
-    description:(
+    description: (
       <>
-        Add images, files, and links to notes.<br />
-        Record and attach audio notes.<br />
-       
+        Add images, files, and links to notes.
+        <br />
+        Record and attach audio notes.
+        <br />
       </>
     ),
     imageUrl: "/feature2.jpeg",
-    imageWidth: 450, 
-    imageHeight: 300, 
+    imageWidth: 450,
+    imageHeight: 300,
   },
   {
     title: "Note Sharing and Collaboration",
     description: (
       <>
-        Share notes with others and collaborate in real-time.<br />
-        Set permissions for view or edit access.<br />
-        
+        Share notes with others and collaborate in real-time.
+        <br />
+        Set permissions for view or edit access.
+        <br />
       </>
     ),
     imageUrl: "/feature3.jpeg",
-    imageWidth: 450, 
-    imageHeight: 300, 
+    imageWidth: 450,
+    imageHeight: 300,
   },
 ];
 
@@ -75,13 +81,13 @@ const Features = () => {
             className="absolute top-4 left-[-6rem] rounded-t-lg shadow-2xl"
             whileHover={{ scale: 1, translateX: -3, translateY: -3, rotate: 3 }}
             whileTap={{ scale: 1 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <Image
               src={feature.imageUrl}
               alt={feature.title}
-              width={feature.imageWidth} 
-              height={feature.imageHeight} 
+              width={feature.imageWidth}
+              height={feature.imageHeight}
               quality={95}
               className="hidden sm:block"
             />
@@ -92,8 +98,6 @@ const Features = () => {
               {feature.description}
             </p>
           </div>
-
-          
         </motion.section>
       ))}
     </motion.div>
