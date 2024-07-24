@@ -72,6 +72,9 @@ const Features = () => {
       }}
       className="group sm:mb-8 last:mb-0 scroll-mt-28 h-auto"
     >
+       <h2 className="text-4xl font-bold text-center character-shadow mb-12 text-green-600 dark:text-green-400">
+       📌 What Makes Acme Note Unique?
+        </h2>
       {featureData.map((feature, index) => (
         <motion.section
           key={index}
